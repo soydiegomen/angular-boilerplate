@@ -9,20 +9,8 @@
 		var directive = {
 			restrict: 'EA',
 		    templateUrl: 'js/app/widgets/siteMenu/site-menu.html',
-		    link: function(scope, elem, attrs) {
-		    	scope.isNavCollapsed = true;
-		    	console.log('Hire menu!');
-		        /*
-		        scope.isRouteLoading = false;
-
-		        $rootScope.$on('$routeChangeStart', function() {
-		          scope.isRouteLoading = true;
-		        });
-
-		        $rootScope.$on('$routeChangeSuccess', function() {
-		          scope.isRouteLoading = false;
-		        });*/
-		    }
+		    controllerAs: 'menuCtl',
+		    controller: 'SiteMenuCtrl'
 		};
 
 		return directive;
